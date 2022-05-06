@@ -26,9 +26,8 @@ class FontSizeSettingUI extends StatelessWidget {
                     color:Colors.green
                   ),
                   /*
-                  1. SliderはProvider.ofでMyDataにアクセスし、値の取得や設定を行う
-                  2. MyDataのsetterの中で、notifyListenersでリスナーに変更を通知する
-                  3. Consumerが変更を検知して、Textへの値の設定と作り直しを行う
+                    ConsumerがnotifyListeners()からの変更を検知.
+                    Textへの値の設定と作り直しを行う.
                   */
                   Consumer<FontSizeModel>(
                     builder: (context, myFontSize, _) => Text(
