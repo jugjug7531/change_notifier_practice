@@ -3,6 +3,9 @@
 ## 概要
 Provider+ChangeNotifierを利用して、Statefulwidgetを使わない状態管理の練習をする.
 
+## 動作例
+https://jugjug7531.github.io/change_notifier_practice/
+
 ## 処理の大まかな流れ
 1. MySliderクラスはProvider.ofでFontSizeModelクラスにアクセスし、値の取得や設定を行う
 2. FontSizeModelクラスのsetterの中で、notifyListeners()でリスナーに変更を通知する
